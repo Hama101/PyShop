@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block head %}
+        <title>Store</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Store :</h1>
+    {% for p in products%}
+        <li>{{p.name}} ({{p.price}} dt) </li>
+    {%  endfor  %}
+
+{%  endblock  %}
